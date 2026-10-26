@@ -1,3 +1,4 @@
 export function notFoundHandler(req,res){
-    res.status(400).json({erro: 'Rota não encontrada'})
+    res.status(404).json({erro: 'Rota não encontrada'})
 }
+

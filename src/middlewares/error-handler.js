@@ -12,7 +12,7 @@ export function errorHandler(req,res){
             erro: 'Sintaxe de JSON inválida'
         })
     }
-    // entity.parse.failed identifica requisições onde o corpo ultapassou o limite configurado
+    // entity.too.large identifica requisições onde o corpo ultapassou o limite configurado
     if (err.type==='entity.too.large'){
         return res.status(413).json({
             erro: "Corpo da requisição muito grande"
